@@ -1,0 +1,13 @@
+{
+  "name": "mlsh-corb",
+  "version": "1.0.0",
+  "description": "Package the corb scripts used by mlsh as an add on.",
+  "main": "bin/index.js",
+  "scripts": {
+    "corb": "node bin/corb",
+    "package": "scripts/package.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

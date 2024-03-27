@@ -1,2 +1,3 @@
 # mlsh-plugin-corb
-Package the corb scripts used by mlsh as an add on.
+
+Easy to run corb plugin for mlsh [https://github.com/eurochriskelly/mlsh].
