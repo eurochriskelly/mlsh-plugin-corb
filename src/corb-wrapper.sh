@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# A wrapper for running corb with minimum configuration
+#
 main() {
   initialize
   local start=$(date +%s)
@@ -10,8 +11,13 @@ main() {
   echo "" >$dataReport
   echo "" >$javaReport
 
-  II "Storing corb log in [$javaReport]"
-  II "Storing corb report in [$dataReport]"
+  if [ -z "$job" ]; then
+    echo "No job provided. Exiting."
+    exit 1
+  fi
+
+  II "Storing corb log for job [$job] in [$javaReport]"
+  II "Storing corb report for job [$job] in [$dataReport]"
 
   #set -o xtrace
   corbOpts=(
